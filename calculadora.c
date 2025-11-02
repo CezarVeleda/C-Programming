@@ -20,11 +20,13 @@ float divisao(int op1, int op2){
     return op1 / op2;
 };
 float radiciacao(int op1, int op2){
-    printf("%.2f √ %.2f = %.2f\n", op1, op2, pow(op1, 1.0 / op2));
+    double result = pow(op1, 1.0 / op2);
+    printf("%.d √ %d = %.1f\n", op1, op2, result);
     return pow(op1, 1.0/op2);
 }
 int potenciacao(int op1, int op2){
-    printf("%.2f ^ %.2f = %.2f\n", op1, op2, pow(op1, op2));
+    double result = pow(op1, op2);
+    printf("%d ^ %d = %.2f \n", op1, op2, result);
     return pow(op1, op2);
 }
 
